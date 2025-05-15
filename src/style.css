@@ -21,3 +21,11 @@
 }
 /* anim end */
 
+.hero-banner {
+    background-image: linear-gradient(#1073b590, #1073b590), url("img/Offices.jpg");
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
