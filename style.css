@@ -1,4 +1,23 @@
-/* empty :( */
 .banner {
     background-color: #537558;
 }
+.team {
+    width: 33.33%; display: grid;
+}
+.message {
+    background-color: #1073b5;
+}
+.content, .overlay {
+    grid-area: 1/1
+}
+
+/* main page team anim */
+.overlay img:hover {
+    scale: 1.1;
+    translate: 0 -5%;
+}
+.overlay img{
+    transition: 1s ease;
+}
+/* anim end */
+
