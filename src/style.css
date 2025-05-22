@@ -1,7 +1,7 @@
 .banner {
     background-color: #537558;
 }
-.team {
+.team_home {
     width: 33.33%; display: grid;
 }
 .message {
@@ -28,4 +28,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.bios {
+    background-color: #537558;
 }
