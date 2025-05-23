@@ -1,4 +1,4 @@
-.banner {
+.banner, footer {
     background-color: #537558;
 }
 .team_home {
@@ -30,16 +30,16 @@
     position: relative;
 }
 
-.bios {
-    background-color: #537558;
-}
-
 .required label:after {
     content: "*";
     color: red;
     position: relative;
     top: 0;
     right: 0;
+}
+
+.apply .container {
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 992px) {

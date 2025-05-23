@@ -223,11 +223,18 @@
     </div>
 </section>
 
-<section class="apply p-4">
-    <div class="container">
+<section class="apply p-3" style="background-color: lightblue">
+    <div class="container bg-white p-3">
         <form class="row row-cols-1 g-3" id="form">
             <div class="alert alert-danger d-flex align-items-center" role="alert">
-                STOP! Please read requirements before submitting an application.
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                    <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                </svg>
+                <div>
+                    <strong>STOP!</strong> Please read requirements before submitting an application.
+                </div>
             </div>
             <div class="required col">
                 <label for="name" class="form-label">Name</label>
@@ -261,15 +268,17 @@
             <div class="required col form-check">
                 <input type="checkbox" class="form-check-input" id="privacy-policy" required>
                 <label class="form-check-label" for="privacy-policy">I certify that I have read and agree to the Hot
-                    Beans WEB <a href="" data-bs-toggle="modal" data-bs-target="#privacypolicy">Privacy policy</a>.</label>
+                    Beans WEB <a href="" data-bs-toggle="modal" data-bs-target="#privacypolicy">Privacy
+                        policy</a>.</label>
             </div>
             <p class="text-end"><sub>Items with <span style="color: red">*</span> are a required field.</sub></p>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="form_submit">Submit</button>
         </form>
     </div>
 </section>
 
-<div class="modal fade" id="privacypolicy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="privacyPolicyLabel" aria-hidden="true">
+<div class="modal fade" id="privacypolicy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="privacyPolicyLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -288,13 +297,21 @@
                     PECR means Privacy & Electronic Communications Regulation.<br>
                     Cookies mean small files stored on a users computer or device.<br>
                     Processing of your personal data<br>
-                    Under the GDPR (General Data Protection Regulation) we control and process any personal information you provide to us electronically in the following ways. Unless otherwise defined, we only process your personal data for accounts & records, advertising, marketing, PR or staff administration (where applicable) purposes;<br><br>
+                    Under the GDPR (General Data Protection Regulation) we control and process any personal information
+                    you provide to us electronically in the following ways. Unless otherwise defined, we only process
+                    your personal data for accounts & records, advertising, marketing, PR or staff administration (where
+                    applicable) purposes;<br><br>
 
-                    We use the contract lawful basis under the GDPR for the processing of your information to provide you with details about our services, supplying a quote or estimate.<br>
-                    We shall continue to process your information until the contract between us ends or is terminated under any contract terms.<br>
+                    We use the contract lawful basis under the GDPR for the processing of your information to provide
+                    you with details about our services, supplying a quote or estimate.<br>
+                    We shall continue to process your information until the contract between us ends or is terminated
+                    under any contract terms.<br>
                     Your personal data under the contract lawful basis is not shared with any third parties.<br><br>
 
-                    We use the consent lawful basis under the GDPR for the processing of your information when you explicitly consent to subscribe to our email mailing list. Your information is used to send you marketing messages within the scope outlined to you at the point of subscription. We collect the following information from you;<br><br>
+                    We use the consent lawful basis under the GDPR for the processing of your information when you
+                    explicitly consent to subscribe to our email mailing list. Your information is used to send you
+                    marketing messages within the scope outlined to you at the point of subscription. We collect the
+                    following information from you;<br><br>
 
                     Your I.P address<br>
                     Your Full Name<br>
@@ -303,18 +320,29 @@
                     Your CV<br>
                     Your Cover Letter<br><br>
 
-                    We use the legitimate interests lawful basis under the GDPR for the processing of your information where a shared interest exists between us. Your information is not shared with any third parties. We only store this information for as long as a legitimate interest exists.<br><br>
+                    We use the legitimate interests lawful basis under the GDPR for the processing of your information
+                    where a shared interest exists between us. Your information is not shared with any third parties. We
+                    only store this information for as long as a legitimate interest exists.<br><br>
 
-                    Any personal information processed is done so securely with protective measures in place to prevent data breach. This includes data saved to computers, mobile devices, phones, laptops or tablets. Protective measures include passwords, pass codes, finger print recognition software and fire wall technology.<br><br>
+                    Any personal information processed is done so securely with protective measures in place to prevent
+                    data breach. This includes data saved to computers, mobile devices, phones, laptops or tablets.
+                    Protective measures include passwords, pass codes, finger print recognition software and fire wall
+                    technology.<br><br>
 
-                    You can unsubscribe or manage your personal information at any time through an online system, which you will find links to in any subscription confirmation email or marketing message we sent to you since.<br>
-                    We will continue to process your information under you withdraw consent or it is determined your consent no longer exists.<br>
+                    You can unsubscribe or manage your personal information at any time through an online system, which
+                    you will find links to in any subscription confirmation email or marketing message we sent to you
+                    since.<br>
+                    We will continue to process your information under you withdraw consent or it is determined your
+                    consent no longer exists.<br>
                     Your personal data under the consent lawful basis is not shared with any third parties.<br><br>
 
-                    If, as determined by us, the lawful basis upon which we process your personal information changes, we will notify you about the change and any new lawful basis to be used if required. We shall stop processing your personal information if the lawful basis used is no longer relevant.<br><br>
+                    If, as determined by us, the lawful basis upon which we process your personal information changes,
+                    we will notify you about the change and any new lawful basis to be used if required. We shall stop
+                    processing your personal information if the lawful basis used is no longer relevant.<br><br>
 
                     Your individual rights<br>
-                    Under the GDPR your rights are as follows. You can read more about your rights in details here;<br><br>
+                    Under the GDPR your rights are as follows. You can read more about your rights in details
+                    here;<br><br>
 
                     the right to be informed;<br>
                     the right of access;<br>
@@ -324,25 +352,35 @@
                     the right to data portability;<br>
                     the right to object; and<br>
                     the right not to be subject to automated decision-making including profiling.<br>
-                    You also have the right to complain to the ICO [www.ico.org.uk] if you feel there is a problem with the way we are handling your data.<br><br>
+                    You also have the right to complain to the ICO [www.ico.org.uk] if you feel there is a problem with
+                    the way we are handling your data.<br><br>
 
                     We handle subject access requests in accordance with the GDPR.<br><br>
 
                     Internet cookies<br>
-                    We use cookies on this website to provide you with a better user experience. We do this by placing a small text file on your device / computer hard drive to track how you use the website, to record or log whether you have seen particular messages that we display, to keep you logged into the website where applicable, to display relevant adverts or content, referred you to a third party website.<br><br>
+                    We use cookies on this website to provide you with a better user experience. We do this by placing a
+                    small text file on your device / computer hard drive to track how you use the website, to record or
+                    log whether you have seen particular messages that we display, to keep you logged into the website
+                    where applicable, to display relevant adverts or content, referred you to a third party website.<br><br>
 
                     Some cookies are required to enjoy and use the full functionality of this website.<br><br>
 
-                    We use a cookie control system which allows you to accept the use of cookies, and control which cookies are saved to your device / computer. Some cookies will be saved for specific time periods, where others may last indefinitely. Your web browser should provide you with the controls to manage and delete cookies from your device, please see your web browser options.<br><br>
+                    We use a cookie control system which allows you to accept the use of cookies, and control which
+                    cookies are saved to your device / computer. Some cookies will be saved for specific time periods,
+                    where others may last indefinitely. Your web browser should provide you with the controls to manage
+                    and delete cookies from your device, please see your web browser options.<br><br>
 
                     Cookies that we use are;<br>
                     Google universal analytics; _ga, _gat, _gid<br><br>
 
                     Data security and protection<br>
-                    We ensure the security of any personal information we hold by using secure data storage technologies and precise procedures in how we store, access and manage that information. Our methods meet the GDPR compliance requirement.<br><br>
+                    We ensure the security of any personal information we hold by using secure data storage technologies
+                    and precise procedures in how we store, access and manage that information. Our methods meet the
+                    GDPR compliance requirement.<br><br>
 
                     Transparent Privacy Explanations<br>
-                    We have provided some further explanations about user privacy and the way we use this website to help promote a transparent and honest user privacy methodology.
+                    We have provided some further explanations about user privacy and the way we use this website to
+                    help promote a transparent and honest user privacy methodology.
                 </p>
             </div>
             <div class="modal-footer">
@@ -359,4 +397,16 @@
 </script>
 <script src="script.js"></script>
 </body>
+<footer class="d-flex flex-wrap align-items-center justify-content-between p-3">
+    <div class="col-md-4 d-flex align-items-center">
+        <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" href="index.html" aria-label="...">
+            <img class="" src="img/modified/logo-transparent.png" alt='logo' style="width: 30px;">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© Hot Beans 2025</span>
+    </div>
+    <div class="d-flex justify-content-end">
+        <p>75 Broadway - Peterborough - PE1 1SY
+        </p>
+    </div>
+</footer>
 </html>
