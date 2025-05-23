@@ -33,3 +33,23 @@
 .bios {
     background-color: #537558;
 }
+
+.required label:after {
+    content: "*";
+    color: red;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .card-small {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card-small {
+        width: 50%
+    }
+}
