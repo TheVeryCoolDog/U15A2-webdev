@@ -1,7 +1,7 @@
-.banner {
+.banner, footer {
     background-color: #537558;
 }
-.team {
+.team_home {
     width: 33.33%; display: grid;
 }
 .message {
@@ -28,4 +28,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.required label:after {
+    content: "*";
+    color: red;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.apply .container {
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    .card-small {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card-small {
+        width: 50%
+    }
 }

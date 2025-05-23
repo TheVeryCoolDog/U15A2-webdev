@@ -18,7 +18,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
     <div class="container">
-        <a class="navbar-brand" href="#">Hot Beans WEB</a>
+        <a class="navbar-brand" href="index.html">Hot Beans WEB</a>
 
         <button
                 class="navbar-toggler"
@@ -55,42 +55,50 @@
 
 <!-- hero banner -->
 <section class="hero-banner text-center p-5 text-md-start">
-    <div class="card bg-dark" style="width: 18rem;">
+    <div class="card bg-dark" style="width: 50vw; max-width: 18rem;">
         <div class="card-body">
             <h1 class="card-title fw-bolder text-white">About the team!</h1>
-            <a href="#" class="btn btn-primary">Join us</a>
+            <a href="apply.html" class="btn btn-primary">Join us</a>
         </div>
     </div>
 </section>
 
-<section class="bios">
+<section style="background-color: darkseagreen">
     <div class="container">
-        <div class="row p-2">
-            <div class="col-md-5">
-                <img src="img/Daniel_Lecroy.jpg" class="img-fluid" alt="">
+        <div class="team_mobile row row-cols-md-2 gy-3 p-2 align-items-center">
+            <div class="col-md-5 order-md-0">
+                <img src="img/Daniel_Lecroy.jpg" class="img-fluid" alt="Daniel Lecroy" onclick="HideShow('daniel')">
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 order-md-0 d-none d-md-block" id="daniel">
+                <h2 class="text-white text-center">Daniel Lecroy</h2>
                 <p>I'm Daniel and probably not the typical designer positioned behind an Illustrator artboard adjusting
                     pixels, but I design.
                     Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me (~_^).
-                    I'm committed to creating fluent user experiences while staying fashionable.
-
-                    In building JavaScript applications, I'm equipped with just the right tools, and can absolutely
+                    I'm committed to creating fluent user experiences while staying fashionable.</p>
+                <p>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely
                     function independently
                     of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are
                     priorities on my radar.
-
-                    I draw inspiration from a lot of different places when designing websites. Being a designer and
+                </p>
+                <p>I draw inspiration from a lot of different places when designing websites. Being a designer and
                     creating something new every day is challenging.
                     Sometimes, ideas spark instantly. But other times? They can take hours or even days to develop.
                     When this happens, it’s useful to step away from the project for a moment and look to others’ work
-                    like at csszengarden to find inspiration.
+                    like at csszengarden to find inspiration.</p>
+                <p>
+                    I also draw inpirateion and awe from cultural art from around the world both old and new.
+                </p>
 
-                    I also draw inpirateion and awe from cultural art from around the world both old and new.</p>
             </div>
-            <div class="col-md-7">
-                <p>Hello! My name is Li and I enjoy creating things that live on the internet.
-
+            <div class="col-md-5 order-md-2">
+                <img src="img/Li%20Chang.PNG" class="img-fluid" alt="Li Change" onclick="HideShow('li')">
+            </div>
+            <div class="col-md-7 order-md-1 d-none d-md-block" id="li">
+                <h2 class="text-white text-center">Li Chang</h2>
+                <p>
+                    Hello! My name is Li and I enjoy creating things that live on the internet.
+                </p>
+                <p>
                     I decided on this career as I grew up with a heavy influence from my father who ran his own software
                     house, and I got an insight into what it's like to work in the tech industry. My father would always
                     hype about how learning to program or by 'speaking the computer's language', he could type a few
@@ -100,8 +108,9 @@
                     importance of technology and how it will continuously evolve to become a basic necessity in our day
                     to day lives.
                     I have always been one of the few girls in computing classes in school as well as only one of three
-                    other girls in my college courses, but I thought if my dad can do it, then so can I.
-
+                    other girls in my college courses, but I thought if my dad can do it, then so can I
+                </p>
+                <p>
                     I got my job with Hot Beans when I was in my last year of university, England had just gone into a
                     lockdown due to COVID-19, and I was on the lookout for a good graduate job.
                     I came across a job posting for a front-end engineer role at HBW I applied and a few days later I
@@ -109,21 +118,24 @@
                     design to development, as well as my awareness of the importance of web accessibility. A couple of
                     days later, I received a phone call offering me the job and an email from my manager to tell me that
                     I was joining the accessibility team.
-
+                </p>
+                <p>
                     A typical as a graduate accessibility specialistis where I work alongside designers and developers
                     to support them to create and build brilliant new features and run accessibility audits across
                     different sites and applications against WCAG (Web Content Accessibility Guidelines), which helps us
                     find accessibility issues to tackle. This ensures that our sites can be used by everyone regardless
                     of their disabilities. My team and I also create and deliver engagement resources to raise awareness
                     and understanding of accessibility.
-
+                </p>
+                <p>
                     Apart from having the basic knowledge of web development and accessibility to carry out the job you
                     also need:
                     determination to learn
                     good communication skills
                     good analytical skills
                     to be adaptive and collaborative to work alongside different people.
-
+                </p>
+                <p>
                     The part I enjoy most about my job is working with a large number of inspiring developers and
                     designers with a range of unique and amazing ideas across many different projects. At the same time,
                     I have an opportunity to advocate and educate others about the importance of the topic. It's great
@@ -131,25 +143,28 @@
                     of their disability.
                 </p>
             </div>
-            <div class="col-md-5">
-                <img src="img/Li%20Chang.PNG" class="img-fluid" alt="">
+            <div class="col-md-5 order-md-3">
+                <img src="img/Rosa_DeCastello.jpg" class="img-fluid" alt="Rosa DeCastello"
+                     onclick="HideShow('rosa')">
             </div>
-            <div class="col-md-5">
-                <img src="img/Rosa_DeCastello.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-md-7">
-                <p>Hi I'm Rosa and I have a real passion for Creative design, I'm never happier than when I'm pushing
+            <div class="col-md-7 order-md-3 d-none d-md-block" id="rosa">
+                <h2 class="text-white text-center">Rosa DeCastello</h2>
+                <p>
+                    Hi I'm Rosa and I have a real passion for Creative design, I'm never happier than when I'm pushing
                     the envelope of what can be done with HTML and CSS
-
+                </p>
+                <p>
                     I came into web design from an art background but soon realised that I needed to develop my
                     technical skills as well. So I did a lot of online courses that pushed what I know, then used the
                     support and experience of my colleagues to hone my skills.
                     My work with Hot Beans has been very varied and I enjoy the challenge of not knowing what industry
                     our next client will come from, it keeps me on my toes and my creativity fresh.
-
+                </p>
+                <p>
                     I love working for HBW and they have been super supportive these are some of the things I do on a
                     day to day basis:
-
+                </p>
+                <p>
                     I take a lead role in maintaining and developing client's sites
                     attend meetings with internal and external clients to plan and develop site content, style and
                     appearance
@@ -157,8 +172,10 @@
                     analyse website usage statistics
                     write reports for senior managers, clients and partnership organisations
                     carry out quality assurance checks on content
-
-                    The part I enjoy most about my job is being both technical and creative it's the perfect mix.</p>
+                </p>
+                <p>
+                    The part I enjoy most about my job is being both technical and creative it's the perfect mix.
+                </p>
             </div>
         </div>
     </div>
@@ -168,5 +185,18 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous">
 </script>
+<script src="script.js"></script>
 </body>
+<footer class="d-flex flex-wrap align-items-center justify-content-between p-3">
+    <div class="col-md-4 d-flex align-items-center">
+        <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" href="index.html" aria-label="...">
+            <img class="" src="img/modified/logo-transparent.png" alt='logo' style="width: 30px;">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© Hot Beans 2025</span>
+    </div>
+    <div class="d-flex justify-content-end">
+        <p>75 Broadway - Peterborough - PE1 1SY
+        </p>
+    </div>
+</footer>
 </html>
